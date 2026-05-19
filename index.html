@@ -2,14 +2,278 @@
 <html lang="uz">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>a</title>
-  <style>
-    *{margin:0;padding:0;box-sizing:border-box}body{background-color:#000}.container{max-width:390px;margin-left:auto;margin-right:auto;padding-left:18px;padding-right:18px}.hero{padding-top:16px;padding-bottom:11px;background-color:#000;max-width:390px;width:100%;margin-left:auto;margin-right:auto;margin-bottom:-20px}.hero__text{font-family:Anta;font-weight:400;font-size:14px;line-height:100%;text-align:center;color:#fff;display:flex;align-items:center;gap:13px;width:100%;margin-bottom:21px}.hero__text::before{content:'';height:1px;flex-grow:1;background:linear-gradient(to right,transparent,rgb(255 255 255 / .8))}.hero__text::after{content:'';height:1px;flex-grow:1;background:linear-gradient(to left,transparent,rgb(255 255 255 / .8))}.row__title{font-family:Anta;font-weight:400;font-size:(20px,4vw,29px);line-height:130%;text-align:center;color:#fff;margin-bottom:4px}.row__title span{background:linear-gradient(90deg,#abf948 0%,#65932b 100%);background-clip:text;color:#fff0}.row__text{font-family:Montserrat;font-weight:400;font-size:clamp(14px, 4vw, 18px);line-height:140%;text-align:center;color:#fff;position:relative}.text__arrow{position:absolute;right:65px;bottom:-7px}.logo{margin-top:16px;max-width:349px;width:100%;margin-bottom:16px;height:auto}.row__buttons{border:7px solid #abf94833;max-width:310px;width:100%;margin-left:auto;margin-right:auto;border-radius:20px}.btn{font-family:Anta;font-weight:400;font-size:clamp(14px, 4vw, 16px);line-height:100%;text-transform:uppercase;color:#000;max-width:310px;width:100%;margin-left:auto;margin-right:auto;display:flex;align-items:center;justify-content:center;gap:16px;background:linear-gradient(90deg,#fafd75 0%,#abf948 100%);padding:16px 16px 16px 16px;border:none;border-radius:15px;cursor:pointer}.arrow{padding:14px;width:42px;height:42px;background-color:#000;border-radius:10px}.hero__center{margin-top:32px;max-width:390px;margin-left:auto;margin-right:auto}.center__title{font-family:Anta;font-weight:400;font-size:clamp(18px, 7vw, 28px);line-height:130%;text-align:center;text-transform:uppercase;color:#fff}.center__inner{overflow:hidden;display:flex;flex-direction:column;width:100%;background-color:#000;padding:16px 0;gap:16px}.wrapper{display:flex;gap:15px;width:max-content}.wrapper:first-child{animation:scrollLeft 20s linear infinite}.wrapper:last-child{animation:scrollRight 20s linear infinite}.wrapper img{border-radius:12px;object-fit:cover;flex-shrink:0}@keyframes scrollLeft{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}@keyframes scrollRight{0%{transform:translateX(-50%)}100%{transform:translateX(0)}}.center__inner:hover .wrapper{animation-play-state:paused}.footer{padding:33px 0}.footer__container{margin-left:auto;margin-right:auto;max-width:390px;width:100%}.footer__title{font-family:Anta;font-weight:400;font-size:clamp(20px, 7vw, 26px);line-height:130%;text-align:center;text-transform:uppercase;color:#fff;margin-bottom:5px}.footer__logo{margin-left:auto;margin-right:auto;display:flex;max-width:390px;width:100%;height:auto}.footer__list{list-style:none;padding:0;display:flex;flex-direction:column;justify-content:start;margin-left:auto;margin-right:auto;max-width:240px;width:100%;padding-bottom:20px}.footer__list li{font-family:'Montserrat',sans-serif;font-size:16px;line-height:1.8;position:relative;padding-left:15px;color:#FFF}.footer__list li::before{content:"•";position:absolute;left:0;color:#fff;font-size:14px}
-  </style>
-  <link rel="stylesheet" href="./css/main.css" media="print" onload="this.media='all'" />
-  <noscript>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>a</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box
+        }
+        
+        body {
+            background-color: #000
+        }
+        
+        .container {
+            max-width: 390px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 18px;
+            padding-right: 18px
+        }
+        
+        .hero {
+            padding-top: 16px;
+            padding-bottom: 11px;
+            background-color: #000;
+            max-width: 390px;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: -20px
+        }
+        
+        .hero__text {
+            font-family: Anta;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 100%;
+            text-align: center;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            gap: 13px;
+            width: 100%;
+            margin-bottom: 21px
+        }
+        
+        .hero__text::before {
+            content: '';
+            height: 1px;
+            flex-grow: 1;
+            background: linear-gradient(to right, transparent, rgb(255 255 255 / .8))
+        }
+        
+        .hero__text::after {
+            content: '';
+            height: 1px;
+            flex-grow: 1;
+            background: linear-gradient(to left, transparent, rgb(255 255 255 / .8))
+        }
+        
+        .row__title {
+            font-family: Anta;
+            font-weight: 400;
+            font-size: clamp(24px, 7vw, 30px);
+            line-height: 130%;
+            text-align: center;
+            color: #fff;
+            margin-bottom: 4px;
+        }
+        
+        .row__title span {
+            background: linear-gradient(90deg, #abf948 0%, #65932b 100%);
+            background-clip: text;
+            color: #fff0
+        }
+        
+        .row__text {
+            font-family: Montserrat;
+            font-weight: 400;
+            font-size: clamp(14px, 4vw, 18px);
+            line-height: 140%;
+            text-align: center;
+            color: #fff;
+            position: relative
+        }
+        
+        .text__arrow {
+            position: absolute;
+            right: 65px;
+            bottom: -7px
+        }
+        
+        .logo {
+            margin-top: 16px;
+            max-width: 349px;
+            width: 100%;
+            margin-bottom: 16px;
+            height: auto
+        }
+        
+        .row__buttons {
+            border: 7px solid #abf94833;
+            max-width: 310px;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 20px
+        }
+        
+        .btn {
+            font-family: Anta;
+            font-weight: 400;
+            font-size: clamp(14px, 4vw, 16px);
+            line-height: 100%;
+            text-transform: uppercase;
+            color: #000;
+            max-width: 310px;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 16px;
+            background: linear-gradient(90deg, #fafd75 0%, #abf948 100%);
+            padding: 16px 16px 16px 16px;
+            border: none;
+            border-radius: 15px;
+            cursor: pointer
+        }
+        
+        .arrow {
+            padding: 14px;
+            width: 42px;
+            height: 42px;
+            background-color: #000;
+            border-radius: 10px
+        }
+        
+        .hero__center {
+            margin-top: 32px;
+            max-width: 390px;
+            margin-left: auto;
+            margin-right: auto
+        }
+        
+        .center__title {
+            font-family: Anta;
+            font-weight: 400;
+            font-size: clamp(18px, 7vw, 28px);
+            line-height: 130%;
+            text-align: center;
+            text-transform: uppercase;
+            color: #fff
+        }
+        
+        .center__inner {
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            background-color: #000;
+            padding: 16px 0;
+            gap: 16px
+        }
+        
+        .wrapper {
+            display: flex;
+            gap: 15px;
+            width: max-content
+        }
+        
+        .wrapper:first-child {
+            animation: scrollLeft 20s linear infinite
+        }
+        
+        .wrapper:last-child {
+            animation: scrollRight 20s linear infinite
+        }
+        
+        .wrapper img {
+            border-radius: 12px;
+            object-fit: cover;
+            flex-shrink: 0
+        }
+        
+        @keyframes scrollLeft {
+            0% {
+                transform: translateX(0)
+            }
+            100% {
+                transform: translateX(-50%)
+            }
+        }
+        
+        @keyframes scrollRight {
+            0% {
+                transform: translateX(-50%)
+            }
+            100% {
+                transform: translateX(0)
+            }
+        }
+        
+        .center__inner:hover .wrapper {
+            animation-play-state: paused
+        }
+        
+        .footer {
+            padding: 33px 0
+        }
+        
+        .footer__container {
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 390px;
+            width: 100%
+        }
+        
+        .footer__title {
+            font-family: Anta;
+            font-weight: 400;
+            font-size: clamp(20px, 7vw, 26px);
+            line-height: 130%;
+            text-align: center;
+            text-transform: uppercase;
+            color: #fff;
+            margin-bottom: 5px
+        }
+        
+        .footer__logo {
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            max-width: 390px;
+            width: 100%;
+            height: auto
+        }
+        
+        .footer__list {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 240px;
+            width: 100%;
+            padding-bottom: 20px
+        }
+        
+        .footer__list li {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 16px;
+            line-height: 1.8;
+            position: relative;
+            padding-left: 15px;
+            color: #FFF
+        }
+        
+        .footer__list li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #fff;
+            font-size: 14px
+        }
+    </style>
+    <link rel="stylesheet" href="./css/main.css" media="print" onload="this.media='all'" />
+    <noscript>
     <link rel="stylesheet" href="./css/main.css" />
   </noscript>
 
@@ -18,164 +282,133 @@
 <body>
 
 
-  <main>
-    <section class="hero">
-      <div class="hero__container container">
-        <p class="hero__text">Shakhlo Alikhanova</p>
-        <div class="hero__row">
-          <h2 class="row__title">AI BILAN 5 XIL YO'LDA <br> <span>$1,000 TOPISH</span> YO'LLARI</h2>
-          <p class="row__text">Shvetsiyadan Sun’iy Intellekt <br> mutaxassisi darsligi <img
-              src="./images/hero/text__arrow.svg" alt="arrow" width="16px" height="24" loading="lazy" decoding="async"
-              class="text__arrow"></p>
-          <img src="./images/hero/logo.avif" alt="img" width="349" height="210" fetchpriority="high" decoding="async"
-            class="logo">
-          <div class="row__buttons">
-            <button class="btn" id="open">Video darslikni ko’rish <img src="./images/hero/arrow.svg" alt="arrow"
+    <main>
+        <section class="hero">
+            <div class="hero__container container">
+                <p class="hero__text">Shakhlo Alikhanova</p>
+                <div class="hero__row">
+                    <h2 class="row__title">AI BILAN 5 XIL YO'LDA <br> <span>$1,000 TOPISH</span> YO'LLARI</h2>
+                    <p class="row__text">Shvetsiyadan Sun’iy Intellekt <br> mutaxassisi darsligi <img src="./images/hero/text__arrow.svg" alt="arrow" width="16px" height="24" loading="lazy" decoding="async" class="text__arrow"></p>
+                    <img src="./images/hero/logo.avif" alt="img" width="349" height="210" fetchpriority="high" decoding="async" class="logo">
+                    <div class="row__buttons">
+                        <button class="btn" id="open">Video darslikni ko’rish <img src="./images/hero/arrow.svg" alt="arrow"
                 width="10" height="10" loading="lazy" decoding="async" class="arrow"></button>
-          </div>
-        </div>
+                    </div>
+                </div>
 
-      </div>
-    </section>
+            </div>
+        </section>
 
-    <div class="hero__center">
-      <h2 class="center__title">O’quvchilarimning <br> hozirgi daromadlari</h2>
-      <div class="center__inner">
-        <div class="wrapper">
-          <a href="https://youtu.be/1DxQNOf_o1A" target="_blank" rel="noopener noreferrer" class="video-card">
-            <img src="https://img.youtube.com/vi/1DxQNOf_o1A/mqdefault.jpg" width="125" height="156"
-              style="border-radius: 15px;" loading="lazy" decoding="async" alt="YouTube thumbnail 1"
-              class="card__img__1">
-          </a>
-          <a href="https://youtu.be/VyeBL1dqxfQ" target="_blank" rel="noopener noreferrer" class="video-card">
-            <img src="https://img.youtube.com/vi/VyeBL1dqxfQ/mqdefault.jpg" width="125" height="156"
-              style="border-radius: 15px;" loading="lazy" decoding="async" alt="YouTube thumbnail 2"
-              class="card__img__2">
-          </a>
-          <a href="https://youtu.be/Shi1_SslND0" target="_blank" rel="noopener noreferrer" class="video-card">
-            <img src="https://img.youtube.com/vi/Shi1_SslND0/mqdefault.jpg" width="125" height="156"
-              style="border-radius: 15px;" loading="lazy" decoding="async" alt="YouTube thumbnail 3"
-              class="card__img__3">
-          </a>
-          <a href="https://youtu.be/0Tch0N5nsRU" target="_blank" rel="noopener noreferrer" class="video-card">
-            <img src="https://img.youtube.com/vi/0Tch0N5nsRU/mqdefault.jpg" width="125" height="156"
-              style="border-radius: 15px;" loading="lazy" decoding="async" alt="YouTube thumbnail 4"
-              class="card__img__1">
-          </a>
-          <a href="https://youtu.be/0Tch0N5nsRU" target="_blank" rel="noopener noreferrer" class="video-card">
-            <img src="https://img.youtube.com/vi/0Tch0N5nsRU/mqdefault.jpg" width="125" height="156"
-              style="border-radius: 15px;" loading="lazy" decoding="async" alt="YouTube thumbnail 5"
-              class="card__img__3">
-          </a>
-          <a href="https://youtu.be/0pStigyl674" target="_blank" rel="noopener noreferrer" class="video-card">
-            <img src="https://img.youtube.com/vi/0pStigyl674/mqdefault.jpg" width="125" height="156"
-              style="border-radius: 15px;" loading="lazy" decoding="async" alt="YouTube thumbnail 6"
-              class="card__img__2">
-          </a>
-        </div>
-        <div class="wrapper">
-          <a href="https://youtu.be/7ARBJQn6QkM" target="_blank" rel="noopener noreferrer" class="video-card">
-            <img src="https://img.youtube.com/vi/7ARBJQn6QkM/mqdefault.jpg" width="125" height="156"
-              style="border-radius: 15px;" loading="lazy" decoding="async" alt="YouTube thumbnail 7"
-              class="card__img__1">
-          </a>
-          <a href="https://youtu.be/pbOXOY78dNA" target="_blank" rel="noopener noreferrer" class="video-card">
-            <img src="https://img.youtube.com/vi/pbOXOY78dNA/mqdefault.jpg" width="125" height="156"
-              style="border-radius: 15px;" loading="lazy" decoding="async" alt="YouTube thumbnail 8"
-              class="card__img__2">
-          </a>
-          <a href="https://youtu.be/MZbwu3-uz3Y" target="_blank" rel="noopener noreferrer" class="video-card">
-            <img src="https://img.youtube.com/vi/MZbwu3-uz3Y/mqdefault.jpg" width="125" height="156"
-              style="border-radius: 15px;" loading="lazy" decoding="async" alt="YouTube thumbnail 9"
-              class="card__img__3">
-          </a>
-          <a href="https://youtu.be/CAr02YlEJUc" target="_blank" rel="noopener noreferrer" class="video-card">
-            <img src="https://img.youtube.com/vi/CAr02YlEJUc/mqdefault.jpg" width="125" height="156"
-              style="border-radius: 15px;" loading="lazy" decoding="async" alt="YouTube thumbnail 10"
-              class="card__img__1">
-          </a>
-          <a href="https://youtu.be/CAr02YlEJUc" target="_blank" rel="noopener noreferrer" class="video-card">
-            <img src="https://img.youtube.com/vi/CAr02YlEJUc/mqdefault.jpg" width="125" height="156"
-              style="border-radius: 15px;" loading="lazy" decoding="async" alt="YouTube thumbnail 11"
-              class="card__img__2">
-          </a>
-          <a href="https://youtu.be/rOpEN1JDaD0" target="_blank" rel="noopener noreferrer" class="video-card">
-            <img src="https://img.youtube.com/vi/rOpEN1JDaD0/mqdefault.jpg" width="125" height="156"
-              style="border-radius: 15px;" loading="lazy" decoding="async" alt="YouTube thumbnail 12"
-              class="card__img__3">
-          </a>
-        </div>
-      </div>
-      <div class="row__buttons">
-        <button class="btn" id="open">Video darslikni ko’rish <img src="./images/hero/arrow.svg" alt="arrow" width="10"
+        <div class="hero__center">
+            <h2 class="center__title">O’quvchilarimning <br> hozirgi daromadlari</h2>
+            <div class="center__inner">
+                <div class="wrapper">
+                    <a href="https://youtu.be/1DxQNOf_o1A" target="_blank" rel="noopener noreferrer" class="video-card">
+                        <img src="https://img.youtube.com/vi/1DxQNOf_o1A/mqdefault.jpg" width="125" height="156" style="border-radius: 15px;" loading="lazy" decoding="async" alt="YouTube thumbnail 1" class="card__img__1">
+                    </a>
+                    <a href="https://youtu.be/VyeBL1dqxfQ" target="_blank" rel="noopener noreferrer" class="video-card">
+                        <img src="https://img.youtube.com/vi/VyeBL1dqxfQ/mqdefault.jpg" width="125" height="156" style="border-radius: 15px;" loading="lazy" decoding="async" alt="YouTube thumbnail 2" class="card__img__2">
+                    </a>
+                    <a href="https://youtu.be/Shi1_SslND0" target="_blank" rel="noopener noreferrer" class="video-card">
+                        <img src="https://img.youtube.com/vi/Shi1_SslND0/mqdefault.jpg" width="125" height="156" style="border-radius: 15px;" loading="lazy" decoding="async" alt="YouTube thumbnail 3" class="card__img__3">
+                    </a>
+                    <a href="https://youtu.be/0Tch0N5nsRU" target="_blank" rel="noopener noreferrer" class="video-card">
+                        <img src="https://img.youtube.com/vi/0Tch0N5nsRU/mqdefault.jpg" width="125" height="156" style="border-radius: 15px;" loading="lazy" decoding="async" alt="YouTube thumbnail 4" class="card__img__1">
+                    </a>
+                    <a href="https://youtu.be/0Tch0N5nsRU" target="_blank" rel="noopener noreferrer" class="video-card">
+                        <img src="https://img.youtube.com/vi/0Tch0N5nsRU/mqdefault.jpg" width="125" height="156" style="border-radius: 15px;" loading="lazy" decoding="async" alt="YouTube thumbnail 5" class="card__img__3">
+                    </a>
+                    <a href="https://youtu.be/0pStigyl674" target="_blank" rel="noopener noreferrer" class="video-card">
+                        <img src="https://img.youtube.com/vi/0pStigyl674/mqdefault.jpg" width="125" height="156" style="border-radius: 15px;" loading="lazy" decoding="async" alt="YouTube thumbnail 6" class="card__img__2">
+                    </a>
+                </div>
+                <div class="wrapper">
+                    <a href="https://youtu.be/7ARBJQn6QkM" target="_blank" rel="noopener noreferrer" class="video-card">
+                        <img src="https://img.youtube.com/vi/7ARBJQn6QkM/mqdefault.jpg" width="125" height="156" style="border-radius: 15px;" loading="lazy" decoding="async" alt="YouTube thumbnail 7" class="card__img__1">
+                    </a>
+                    <a href="https://youtu.be/pbOXOY78dNA" target="_blank" rel="noopener noreferrer" class="video-card">
+                        <img src="https://img.youtube.com/vi/pbOXOY78dNA/mqdefault.jpg" width="125" height="156" style="border-radius: 15px;" loading="lazy" decoding="async" alt="YouTube thumbnail 8" class="card__img__2">
+                    </a>
+                    <a href="https://youtu.be/MZbwu3-uz3Y" target="_blank" rel="noopener noreferrer" class="video-card">
+                        <img src="https://img.youtube.com/vi/MZbwu3-uz3Y/mqdefault.jpg" width="125" height="156" style="border-radius: 15px;" loading="lazy" decoding="async" alt="YouTube thumbnail 9" class="card__img__3">
+                    </a>
+                    <a href="https://youtu.be/CAr02YlEJUc" target="_blank" rel="noopener noreferrer" class="video-card">
+                        <img src="https://img.youtube.com/vi/CAr02YlEJUc/mqdefault.jpg" width="125" height="156" style="border-radius: 15px;" loading="lazy" decoding="async" alt="YouTube thumbnail 10" class="card__img__1">
+                    </a>
+                    <a href="https://youtu.be/CAr02YlEJUc" target="_blank" rel="noopener noreferrer" class="video-card">
+                        <img src="https://img.youtube.com/vi/CAr02YlEJUc/mqdefault.jpg" width="125" height="156" style="border-radius: 15px;" loading="lazy" decoding="async" alt="YouTube thumbnail 11" class="card__img__2">
+                    </a>
+                    <a href="https://youtu.be/rOpEN1JDaD0" target="_blank" rel="noopener noreferrer" class="video-card">
+                        <img src="https://img.youtube.com/vi/rOpEN1JDaD0/mqdefault.jpg" width="125" height="156" style="border-radius: 15px;" loading="lazy" decoding="async" alt="YouTube thumbnail 12" class="card__img__3">
+                    </a>
+                </div>
+            </div>
+            <div class="row__buttons">
+                <button class="btn" id="open">Video darslikni ko’rish <img src="./images/hero/arrow.svg" alt="arrow" width="10"
             height="10" loading="lazy" decoding="async" class="arrow"></button>
-      </div>
-    </div>
-  </main>
+            </div>
+        </div>
+    </main>
 
-  <footer class="footer">
-    <div class="footer__container">
-      <h2 class="footer__title">Shahlo Alikhanova</h2>
-      <img src="./images/footer/footer__logo.avif" width="390" height="305" loading="lazy" decoding="async" alt="logo"
-        class="footer__logo">
-      <ul class="footer__list">
-        <li>Shvetsariyadan expert</li>
-        <li>200+ O’quvchilar ustozi</li>
-        <li>AI videolari orqali daromad</li>
-        <li>2 yillik tajribaga ega</li>
-      </ul>
-      <div class="row__buttons">
-        <button class="btn" id="open">Video darslikni ko’rish <img src="./images/hero/arrow.svg" alt="arrow" width="10"
+    <footer class="footer">
+        <div class="footer__container">
+            <h2 class="footer__title">Shahlo Alikhanova</h2>
+            <img src="./images/footer/footer__logo.avif" width="390" height="305" loading="lazy" decoding="async" alt="logo" class="footer__logo">
+            <ul class="footer__list">
+                <li>Shvetsariyadan expert</li>
+                <li>200+ O’quvchilar ustozi</li>
+                <li>AI videolari orqali daromad</li>
+                <li>2 yillik tajribaga ega</li>
+            </ul>
+            <div class="row__buttons">
+                <button class="btn" id="open">Video darslikni ko’rish <img src="./images/hero/arrow.svg" alt="arrow" width="10"
             height="10" loading="lazy" decoding="async" class="arrow"></button>
-      </div>
-    </div>
-  </footer>
+            </div>
+        </div>
+    </footer>
 
-  <div id="registrationModal" class="homeModal" style="display: none">
-    <div class="homeModalOverlay"></div>
-    <div class="homeFormContainer">
-      <button class="closeButton" id="closeModalBtn">
+    <div id="registrationModal" class="homeModal" style="display: none">
+        <div class="homeModalOverlay"></div>
+        <div class="homeFormContainer">
+            <button class="closeButton" id="closeModalBtn">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 12 12" fill="none">
           <path d="M1 11L11 1M1 1.00001L11 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
         </svg>
       </button>
-      <div class="homeFormTop">
-        <h1 class="homeFormTopTitle">
-          Ro'yxatdan o'tish uchun <br> ma'lumotlaringizni kiriting!
-        </h1>
-      </div>
-      <form id="registrationForm" name="contact-form">
-        <div class="HomeFormRow">
-          <label class="HomeFormRowLabel" for="name">Ismingiz:</label>
-          <input class="HomeFormRowInput" type="text" id="name" name="name" placeholder="Ismingizni kiriting"
-            autocomplete="name" />
-          <p class="homeFormErrorText" id="nameError" style="display: none">❌ Ismingizni kiriting!</p>
-        </div>
+            <div class="homeFormTop">
+                <h1 class="homeFormTopTitle">
+                    Ro'yxatdan o'tish uchun <br> ma'lumotlaringizni kiriting!
+                </h1>
+            </div>
+            <form id="registrationForm" name="contact-form">
+                <div class="HomeFormRow">
+                    <label class="HomeFormRowLabel" for="name">Ismingiz:</label>
+                    <input class="HomeFormRowInput" type="text" id="name" name="name" placeholder="Ismingizni kiriting" autocomplete="name" />
+                    <p class="homeFormErrorText" id="nameError" style="display: none">❌ Ismingizni kiriting!</p>
+                </div>
 
-        <div class="HomeFormRow">
-          <label class="HomeFormRowLabel" for="phone">Telefon raqamingiz:</label>
-          <div class="phone-input-container">
-            <button type="button" class="selected-country" id="selectedCountry">
+                <div class="HomeFormRow">
+                    <label class="HomeFormRowLabel" for="phone">Telefon raqamingiz:</label>
+                    <div class="phone-input-container">
+                        <button type="button" class="selected-country" id="selectedCountry">
               <div id="selectedCountryFlag" style="display: flex; align-items: center;"></div>
               <span class="selected-code" id="selectedCountryCodeText">+998</span>
             </button>
-            <div class="country-dropdown" id="countryDropdown" style="display:none"></div>
-            <div class="phone-field" style="flex: 1;">
-              <input class="HomeFormRowInput phone-input" type="tel" id="phone" name="phone" inputmode="numeric"
-                placeholder="88 888 88 88" autocomplete="tel"
-                style="border: none; background-color: transparent; padding-left: 5px; width: 100%;" />
-            </div>
-          </div>
-          <p class="homeFormErrorText" id="phoneError" style="display:none">❌ Telefon raqam mos emas!</p>
+                        <div class="country-dropdown" id="countryDropdown" style="display:none"></div>
+                        <div class="phone-field" style="flex: 1;">
+                            <input class="HomeFormRowInput phone-input" type="tel" id="phone" name="phone" inputmode="numeric" placeholder="88 888 88 88" autocomplete="tel" style="border: none; background-color: transparent; padding-left: 5px; width: 100%;" />
+                        </div>
+                    </div>
+                    <p class="homeFormErrorText" id="phoneError" style="display:none">❌ Telefon raqam mos emas!</p>
+                </div>
+
+                <button type="submit" class="HomeFormBtn" id="submitBtn">DAVOM ETISH</button>
+            </form>
         </div>
-
-        <button type="submit" class="HomeFormBtn" id="submitBtn">DAVOM ETISH</button>
-      </form>
     </div>
-  </div>
 
-  <script defer src="./js/phoneFormatter.js"></script>
-  <script defer src="./js/app.js"></script>
+    <script defer src="./js/phoneFormatter.js"></script>
+    <script defer src="./js/app.js"></script>
 </body>
 
 </html>
